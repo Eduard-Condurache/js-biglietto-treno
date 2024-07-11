@@ -16,17 +16,65 @@
         
     </head>
     <body>
+
+        <header>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container">
+                        <a class="navbar-brand w-25" href="#">
+                            <img src="img/logo.png" alt="logo" class="w-50">
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav text-uppercase w-100 d-flex justify-content-end">
+                                <a class="nav-link" href="#">Chi siamo</a>
+                                <a class="nav-link" href="#">Frecce</a>
+                                <a class="nav-link" href="#">Offerte</a>
+                                <a class="nav-link" href="#">Info</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
         
-        <div class="container d-flex vh-100">
-            <div class="row justify-content-center align-self-center w-100">
-                <div class="col">
-                    <div class="h1 text-center">
-                        Il prezzo che devi pagare per il biglietto è: 
-                        <span id="ticketprice-container"></span>
+        <main>
+            <div class="container d-flex">
+                <div class="row justify-content-center align-self-center w-100">
+                    <div class="col-6">
+                        <form id="ticketForm">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-group text-white fw-bold">
+                                        <label for="kmNumber">Numero di chilometri:</label>
+                                        <input type="number" class="form-control" id="kmNumber" required>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group text-white fw-bold">
+                                        <label for="age">Età:</label>
+                                        <input type="number" class="form-control" id="age" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-3">
+                                <button type="submit" class="btn btn-danger">Calcola Prezzo</button>
+                            </div>
+
+                            <div class="h5 mt-4 text-white">
+                                Il prezzo che devi pagare per il biglietto è: 
+                                <span id="ticketprice-container"></span>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
          <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         
